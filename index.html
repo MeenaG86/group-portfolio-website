@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio UI</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="page">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="top">
+        <div class="avatar-box">
+          <img src="https://i.pravatar.cc/150?img=45" alt="avatar">
+        </div>
+
+        <div class="top-text">
+          <h1 class="name">Meena Subash</h1>
+          <p class="role">Frontend developer</p>
+        </div>
+
+        <button class="toggle-btn" id="toggleBtn">
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+      </div>
+
+      <div class="sidebar-content" id="toggleContent">
+        <div class="line"></div>
+
+        <div class="info-item">
+          <div class="icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <p class="label">EMAIL</p>
+            <p class="value" id="emailText">meeash2021@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="icon"><i class="fas fa-phone"></i></div>
+          <div>
+            <p class="label">PHONE</p>
+            <p class="value" id="phoneText">+91 9876543210</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="icon"><i class="fas fa-calendar"></i></div>
+          <div>
+            <p class="label">BIRTHDAY</p>
+            <p class="value">June 23, 1982</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="icon"><i class="fas fa-location-dot"></i></div>
+          <div>
+            <p class="label">LOCATION</p>
+            <p class="value" id="locationText">Tamilnadu, India</p>
+          </div>
+        </div>
+
+        <div id="mapContainer" style="display: none;">
+  <iframe 
+    src="https://www.google.com/maps?q=Tamil+Nadu,India&output=embed"
+    width="100%" 
+    height="250" 
+    style="border:0; border-radius:15px; margin-top:10px;">
+  </iframe>
+</div>
+
+        <div class="socials">
+          <i class="fab fa-facebook-f" id="faceIcon"></i>
+          <i class="fab fa-twitter" id="twitterIcon"></i>
+          <i class="fab fa-instagram" id="instaIcon"></i>
+          <i class="fab fa-github" id="gitIcon"></i>
+          <i class="fab fa-linkedin" id="linkIcon"></i>
+
+
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main content -->
+    <main class="main-card">
+      <div class="tabs-wrapper">
+      <nav class="tabs">
+        <a href="index.html" class="active">About</a>
+        <a href="resume.html">Resume</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      </div>
+
+      <section class="section">
+        <h2>About Me</h2>
+        <div class="underline"></div>
+
+        <p>
+            I am a passionate Frontend Developer with a strong interest in building responsive and user-friendly web applications. I enjoy turning ideas into real-world projects using HTML, CSS, and JavaScript.
+       </p>
+
+       <p>
+          I focus on creating clean, modern, and interactive designs that provide a great user experience. I am continuously learning new technologies and improving my skills to become a better developer.
+      </p>
+      </section>
+
+      <section class="section">
+        <h3>What I'm Doing</h3>
+
+        <div class="service-grid">
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-regular fa-pen-to-square"></i></div>
+            <h4>Web Design</h4>
+            <p>The most modern and high-quality design made at a professional level.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+            <h4>Web Development</h4>
+            <p>High-quality development of sites at the professional level.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+            <h4>Mobile Apps</h4>
+            <p>Professional development of applications for iOS and Android.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-camera-retro"></i></div>
+            <h4>Photography</h4>
+            <p>I make high-quality photos of any category at a professional level.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h3>Testimonials</h3>
+
+        <div class="testimonial-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-avatar">
+              <img src="https://i.pravatar.cc/70?img=15" alt="client">
+            </div>
+            <h4>Daniel Lewis</h4>
+            <p>
+              Meena was hired to create a corporate identity. We were very pleased with
+              the work done.
+            </p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-avatar">
+              <img src="https://i.pravatar.cc/70?img=32" alt="client">
+            </div>
+            <h4>Jessica Miller</h4>
+            <p>
+              Meena was hired to create a corporate identity. We were very pleased with
+              the work done.
+            </p>
+          </div>
+        </div>
+
+        <div class="slider-line">
+          <span></span>
+        </div>
+      </section>
+
+      <section class="section">
+        <h3>Clients</h3>
+
+        <div class="client-grid">
+          <div class="client-item">RANSOM &amp; WILDER</div>
+          <div class="client-item">BIG ENOUGH</div>
+          <div class="client-item">CARA INDOORS</div>
+          <div class="client-item">AUTHENTIC</div>
+        </div>
+
+        <div class="slider-line">
+          <span class="long"></span>
+        </div>
+      </section>
+    </main>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
