@@ -33,11 +33,13 @@ Team Members
 👤 Vignesh – contact
 
 🛠️ Technologies Used
+
 HTML5
 CSS3
 JavaScript
 
 📂 Folder Structure
+
 group-portfolio/
 │── index.html
 │── style.css
@@ -61,7 +63,8 @@ group-portfolio/
 
 
 ├── images/
-│   
+
+
 📱 Responsive Design
 
 This website is optimized for:
@@ -71,13 +74,16 @@ This website is optimized for:
 💻 Desktop Screens
 
 🎯 Learning Outcomes
+
 Team collaboration in web development
 Real-world project structure
 DOM manipulation using JavaScript
 Responsive design using CSS
 
 ⭐ Acknowledgement
+
 Thanks to all team members for their contribution and teamwork in building this project successfully 💪✨
 
 📄 License
+
 This project is for educational purposes only.
