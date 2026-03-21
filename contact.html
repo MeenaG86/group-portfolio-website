@@ -3,144 +3,194 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="contact.css" />
+  <title>Contact - Portfolio UI</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css">
 </head>
 <body>
 
-  <div class="page-wrapper">
+  <div class="page">
 
+    <!-- Sidebar -->
     <aside class="sidebar">
-      <div class="sidebar-inner">
-
-        <div class="sb-avatar-wrap">
-          <img
-            src="https://api.dicebear.com/7.x/adventurer/svg?seed=Richard&backgroundColor=b6e3f4"
-            alt="Richard Hanrick"
-            class="sb-avatar" />
+      <div class="top">
+        <div class="avatar-box">
+          <img src="https://i.pravatar.cc/150?img=45" alt="avatar">
         </div>
 
-        <h2 class="sb-name">Richard Hanrick</h2>
-        <span class="sb-role">Web Developer</span>
+        <div class="top-text">
+          <h1 class="name">Meena Subash</h1>
+          <p class="role">Frontend developer</p>
+        </div>
 
-        <hr class="sb-divider" />
+        <button class="toggle-btn" id="toggleBtn">
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+      </div>
 
-        <ul class="sb-details">
-          <li class="sb-detail-item">
-            <span class="sb-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-            </span>
-            <div>
-              <p class="sb-label">EMAIL</p>
-              <p class="sb-value">richard@example.com</p>
-            </div>
-          </li>
-          <li class="sb-detail-item">
-            <span class="sb-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.07 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16l.92.92z"/></svg>
-            </span>
-            <div>
-              <p class="sb-label">PHONE</p>
-              <p class="sb-value">+1 (213) 352-2795</p>
-            </div>
-          </li>
-          <li class="sb-detail-item">
-            <span class="sb-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-            </span>
-            <div>
-              <p class="sb-label">BIRTHDAY</p>
-              <p class="sb-value">June 23, 1982</p>
-            </div>
-          </li>
-          <li class="sb-detail-item">
-            <span class="sb-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            </span>
-            <div>
-              <p class="sb-label">LOCATION</p>
-              <p class="sb-value">Tamilnadu,<br>India</p>
-            </div>
-          </li>
-        </ul>
+      <div class="sidebar-content" id="toggleContent">
+        <div class="line"></div>
 
+        <div class="info-item">
+          <div class="icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <p class="label">EMAIL</p>
+            <p class="value" id="emailText">meeash2021@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="icon"><i class="fas fa-phone"></i></div>
+          <div>
+            <p class="label">PHONE</p>
+            <p class="value" id="phoneText">+91 9876543210</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="icon"><i class="fas fa-calendar"></i></div>
+          <div>
+            <p class="label">BIRTHDAY</p>
+            <p class="value">June 23, 1982</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="icon"><i class="fas fa-location-dot"></i></div>
+          <div>
+            <p class="label">LOCATION</p>
+            <p class="value" id="locationText">Tamilnadu, India</p>
+          </div>
+        </div>
+
+        <div id="mapContainer" style="display: none;">
+          <iframe 
+            src="https://www.google.com/maps?q=Tamil+Nadu,India&output=embed"
+            width="100%" 
+            height="250" 
+            style="border:0; border-radius:15px; margin-top:10px;">
+          </iframe>
+        </div>
+
+        <div class="socials">
+          <i class="fab fa-facebook-f" id="faceIcon"></i>
+          <i class="fab fa-twitter" id="twitterIcon"></i>
+          <i class="fab fa-instagram" id="instaIcon"></i>
+          <i class="fab fa-github" id="gitIcon"></i>
+          <i class="fab fa-linkedin" id="linkIcon"></i>
+        </div>
       </div>
     </aside>
 
-    <div class="main-column">
+    <!-- Main content -->
+    <main class="main-card">
+      <div class="tabs-wrapper">
+        <nav class="tabs">
+          <a href="index.html">About</a>
+          <a href="resume.html">Resume</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html" class="active">Contact</a>
+        </nav>
+      </div>
 
-      <header class="navbar">
-        <div class="nav-container">
-          <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-            <span></span><span></span><span></span>
-          </button>
-          <nav class="nav-menu">
-            <a href="#" class="nav-link">About</a>
-            <a href="#" class="nav-link">Resume</a>
-            <a href="#" class="nav-link">Portfolio</a>
-            <a href="blog.html" class="nav-link">Blog</a>
-            <a href="contact.html" class="nav-link active">Contact</a>
-          </nav>
+      <!-- Contact Form Section -->
+      <div class="content-area">
+        <h2 class="section-title">Contact</h2>
+        <div class="underline"></div>
+
+        <div class="contact-map" id="contactMapWrap">
+          <iframe
+            id="contactMap"
+            title="Tamilnadu map"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Tamilnadu,India&output=embed"
+            width="100%"
+            height="320"
+            style="border:0; border-radius:15px;">
+          </iframe>
         </div>
-      </header>
 
-      <main class="main">
-        <div class="container">
-          <div class="page-header">
-            <h1 class="page-title">Contact</h1>
-            <span class="title-accent"></span>
+        <p class="section-subtitle">I'm always interested in hearing from you. Feel free to reach out!</p>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required>
+            <p class="error-text" id="nameError"></p>
           </div>
 
-          <section class="map-wrap">
-            <iframe
-              id="contactMap"
-              title="Tamilnadu India map"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps?q=Tamilnadu,India&output=embed"
-              width="100%"
-              height="320"
-              style="border:0;">
-            </iframe>
-          </section>
+          <div class="form-group">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required>
+            <p class="error-text" id="emailError"></p>
+          </div>
 
-          <section class="contact-panel">
-            <h2 class="contact-title">Contact Form</h2>
+          <div class="form-group">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" id="subject" name="subject" class="form-input" placeholder="Message subject" required>
+            <p class="error-text" id="subjectError"></p>
+          </div>
 
-            <form id="contactForm" class="contact-form" novalidate>
-              <div class="field-row">
-                <div class="form-group">
-                  <input type="text" id="fullName" name="fullName" class="form-input" placeholder="Full name" />
-                  <p class="error-text" id="fullNameError"></p>
-                </div>
-                <div class="form-group">
-                  <input type="email" id="email" name="email" class="form-input" placeholder="Email address" />
-                  <p class="error-text" id="emailError"></p>
-                </div>
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" name="message" class="form-textarea" placeholder="Your message here..." rows="6" required></textarea>
+            <p class="error-text" id="messageError"></p>
+          </div>
+
+          <button type="submit" class="submit-btn">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <p class="success-text" id="formSuccess"></p>
+        </form>
+
+        <div class="contact-info">
+          <h3 class="info-heading">Other Ways to Reach Me</h3>
+          <div class="contact-methods">
+            <div class="method-item">
+              <div class="method-icon">
+                <i class="fas fa-envelope"></i>
               </div>
-
-              <div class="form-group">
-                <textarea id="message" name="message" class="form-textarea" rows="6" placeholder="Your Message"></textarea>
-                <p class="error-text" id="messageError"></p>
+              <div class="method-content">
+                <p class="method-label">Email</p>
+                <p class="method-value">team7@portfolio.com</p>
               </div>
+            </div>
 
-              <button type="submit" class="send-btn">Send Message</button>
-              <p class="success-text" id="successText"></p>
-            </form>
-          </section>
+            <div class="method-item">
+              <div class="method-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="method-content">
+                <p class="method-label">Phone</p>
+                <p class="method-value">+91 7777777777</p>
+              </div>
+            </div>
+
+            <div class="method-item">
+              <div class="method-icon">
+                <i class="fas fa-location-dot"></i>
+              </div>
+              <div class="method-content">
+                <p class="method-label">Location</p>
+                <p class="method-value">Tamilnadu, India</p>
+              </div>
+            </div>
+          </div>
         </div>
-      </main>
+      </div>
+    </main>
 
-      <footer class="footer">
-        <p>&copy; 2026 Richard Hanrick. All rights reserved.</p>
-      </footer>
-
-    </div>
   </div>
 
+  <script src="script.js"></script>
   <script src="contact.js"></script>
 </body>
 </html>
