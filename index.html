@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,6 +13,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <div class="page">
@@ -69,13 +71,10 @@
         </div>
 
         <div id="mapContainer" style="display: none;">
-  <iframe 
-    src="https://www.google.com/maps?q=Tamil+Nadu,India&output=embed"
-    width="100%" 
-    height="250" 
-    style="border:0; border-radius:15px; margin-top:10px;">
-  </iframe>
-</div>
+          <iframe src="https://www.google.com/maps?q=Tamil+Nadu,India&output=embed" width="100%" height="250"
+            style="border:0; border-radius:15px; margin-top:10px;">
+          </iframe>
+        </div>
 
         <div class="socials">
           <i class="fab fa-facebook-f" id="faceIcon"></i>
@@ -92,13 +91,13 @@
     <!-- Main content -->
     <main class="main-card">
       <div class="tabs-wrapper">
-      <nav class="tabs">
-        <a href="index.html" class="active">About</a>
-        <a href="resume.html">Resume</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+        <nav class="tabs">
+          <a href="index.html" class="active">About</a>
+          <a href="resume.html">Resume</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </nav>
       </div>
 
       <section class="section">
@@ -106,12 +105,14 @@
         <div class="underline"></div>
 
         <p>
-            I am a passionate Frontend Developer with a strong interest in building responsive and user-friendly web applications. I enjoy turning ideas into real-world projects using HTML, CSS, and JavaScript.
-       </p>
+          I am a passionate Frontend Developer with a strong interest in building responsive and user-friendly web
+          applications. I enjoy turning ideas into real-world projects using HTML, CSS, and JavaScript.
+        </p>
 
-       <p>
-          I focus on creating clean, modern, and interactive designs that provide a great user experience. I am continuously learning new technologies and improving my skills to become a better developer.
-      </p>
+        <p>
+          I focus on creating clean, modern, and interactive designs that provide a great user experience. I am
+          continuously learning new technologies and improving my skills to become a better developer.
+        </p>
       </section>
 
       <section class="section">
@@ -146,48 +147,113 @@
 
       <section class="section">
         <h3>Testimonials</h3>
-
-        <div class="testimonial-grid">
-          <div class="testimonial-card">
-            <div class="testimonial-avatar">
-              <img src="https://i.pravatar.cc/70?img=15" alt="client">
+        <div class="testimonial-scroll-wrapper" id="testimonialScroll">
+          <div class="testimonial-grid">
+            <div class="testimonial-card"
+              onclick="openPopUp('Daniel Lewis', 'https://i.pravatar.cc/70?img=15', '19 March, 2026', 'Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.')">
+              <div class="testimonial-avatar">
+                <img src="https://i.pravatar.cc/70?img=15" alt="client">
+              </div>
+              <h4>Daniel Lewis</h4>
+              <p>
+                Meena was hired to create a corporate identity. We were very pleased with
+                the work done.
+              </p>
             </div>
-            <h4>Daniel Lewis</h4>
-            <p>
-              Meena was hired to create a corporate identity. We were very pleased with
-              the work done.
-            </p>
-          </div>
 
-          <div class="testimonial-card">
-            <div class="testimonial-avatar">
-              <img src="https://i.pravatar.cc/70?img=32" alt="client">
+            <div class="testimonial-card"
+              onclick="openPopUp('Jessica Miller', 'https://i.pravatar.cc/70?img=32', '03 March, 2026', 'Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.')">
+              <div class="testimonial-avatar">
+                <img src="https://i.pravatar.cc/70?img=32" alt="client">
+              </div>
+              <h4>Jessica Miller</h4>
+              <p>
+                Meena was hired to create a corporate identity. We were very pleased with
+                the work done.
+              </p>
             </div>
-            <h4>Jessica Miller</h4>
-            <p>
-              Meena was hired to create a corporate identity. We were very pleased with
-              the work done.
-            </p>
+
+            <div class="testimonial-card"
+              onclick="openPopUp('Emily Evans', 'https://i.pravatar.cc/70?img=10', '14 March, 2026', 'Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.')">
+              <div class="testimonial-avatar">
+                <img src="https://i.pravatar.cc/70?img=10" alt="client">
+              </div>
+              <h4>Emily Evans</h4>
+              <p>
+                Meena was hired to create a corporate identity. We were very pleased with
+                the work done.
+              </p>
+            </div>
+
+            <div class="testimonial-card"
+              onclick="openPopUp('Henry William', 'https://i.pravatar.cc/70?img=25', '14 March, 2026', 'Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.')">
+              <div class="testimonial-avatar">
+                <img src="https://i.pravatar.cc/70?img=25" alt="client">
+              </div>
+              <h4>Henry William</h4>
+              <p>
+                Meena was hired to create a corporate identity. We were very pleased with
+                the work done.
+              </p>
+            </div>
+          </div> <!-- /testimonial-grid -->
+        </div> <!-- /testimonial-scroll-wrapper -->
+
+        <!-- Single shared popup -->
+        <div class="popup-overlay" id="popupOverlay">
+          <div class="card_popup">
+            <button class="popup-close" onclick="closePopUp()">✕</button>
+            <div class="popup-top">
+              <div class="popup-avatar">
+                <img src="" alt="client" id="popupImg">
+              </div>
+              <div>
+                <h4 class="popup-name" id="popupName"></h4>
+                <p class="popup-date" id="popupDate"></p>
+              </div>
+            </div>
+            <p class="popup-body" id="popupBody"></p>
           </div>
         </div>
+        <div class="seg-slider" id="segSlider"></div>
 
-        <div class="slider-line">
-          <span></span>
-        </div>
+
       </section>
 
       <section class="section">
         <h3>Clients</h3>
+        <div class="client-scroll-wrapper" id="clientScroll">
+          <div class="client-grid">
 
-        <div class="client-grid">
-          <div class="client-item">RANSOM &amp; WILDER</div>
-          <div class="client-item">BIG ENOUGH</div>
-          <div class="client-item">CARA INDOORS</div>
-          <div class="client-item">AUTHENTIC</div>
+            <div class="client-item">
+              <img src="./Image/l1.png" alt="">
+            </div>
+            <div class="client-item">
+              <img style="color: white;" src="./Image/l2.png" alt="">
+            </div>
+            <div class="client-item">
+              <img src="./Image/l3.png" alt="">
+            </div>
+            <div class="client-item">
+              <img src="./Image/l4.png" alt="">
+            </div>
+            <div class="client-item">
+              <img src="./Image/l5.png" alt="">
+            </div>
+            <div class="client-item">
+              <img src="./Image/l6.png" alt="">
+            </div>
+            <div class="client-item">
+              <img src="./Image/l7.png" alt="">
+            </div>
+            <div class="client-item">
+              <img src="./Image/l8.png" alt="">
+            </div>
+
+          </div>
         </div>
-
-        <div class="slider-line">
-          <span class="long"></span>
+        <div class="slider-line" id="clientSliderTrack">
+          <span id="clientSliderThumb"></span>
         </div>
       </section>
     </main>
@@ -196,4 +262,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
