@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Portfolio UI</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+  <div class="page">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="top">
+        <div class="avatar-box">
+          <img src="https://i.pravatar.cc/150?img=45" alt="avatar">
+        </div>
+
+        <div class="top-text">
+          <h1 class="name">Meena Subash</h1>
+          <p class="role">Frontend developer</p>
+        </div>
+
+        <button class="toggle-btn" id="toggleBtn">
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+      </div>
+
+      <div class="sidebar-content" id="toggleContent">
+        <div class="line"></div>
+
+        <div class="info-item">
+          <div class="icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <p class="label">EMAIL</p>
+            <p class="value" id="emailText">meeash2021@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="icon"><i class="fas fa-phone"></i></div>
+          <div>
+            <p class="label">PHONE</p>
+            <p class="value" id="phoneText">+91 9876543210</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="icon"><i class="fas fa-calendar"></i></div>
+          <div>
+            <p class="label">BIRTHDAY</p>
+            <p class="value">June 23, 1982</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="icon"><i class="fas fa-location-dot"></i></div>
+          <div>
+            <p class="label">LOCATION</p>
+            <p class="value" id="locationText">Tamilnadu, India</p>
+          </div>
+        </div>
+
+        <div id="mapContainer" style="display: none;">
+          <iframe 
+            src="https://www.google.com/maps?q=Tamil+Nadu,India&output=embed"
+            width="100%" 
+            height="250" 
+            style="border:0; border-radius:15px; margin-top:10px;">
+          </iframe>
+        </div>
+
+        <div class="socials">
+          <i class="fab fa-facebook-f" id="faceIcon"></i>
+          <i class="fab fa-twitter" id="twitterIcon"></i>
+          <i class="fab fa-instagram" id="instaIcon"></i>
+          <i class="fab fa-github" id="gitIcon"></i>
+          <i class="fab fa-linkedin" id="linkIcon"></i>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main content -->
+    <main class="main-card">
+      <div class="tabs-wrapper">
+        <nav class="tabs">
+          <a href="index.html">About</a>
+          <a href="resume.html">Resume</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html" class="active">Contact</a>
+        </nav>
+      </div>
+
+      <!-- Contact Form Section -->
+      <div class="content-area">
+        <h2 class="section-title">Contact</h2>
+        <div class="underline"></div>
+
+        <div class="contact-map" id="contactMapWrap">
+          <iframe
+            id="contactMap"
+            title="Tamilnadu map"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Tamilnadu,India&output=embed"
+            width="100%"
+            height="320"
+            style="border:0; border-radius:15px;">
+          </iframe>
+        </div>
+
+        <p class="section-subtitle">I'm always interested in hearing from you. Feel free to reach out!</p>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required>
+            <p class="error-text" id="nameError"></p>
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required>
+            <p class="error-text" id="emailError"></p>
+          </div>
+
+          <div class="form-group">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" id="subject" name="subject" class="form-input" placeholder="Message subject" required>
+            <p class="error-text" id="subjectError"></p>
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" name="message" class="form-textarea" placeholder="Your message here..." rows="6" required></textarea>
+            <p class="error-text" id="messageError"></p>
+          </div>
+
+          <button type="submit" class="submit-btn">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <p class="success-text" id="formSuccess"></p>
+        </form>
+
+        <div class="contact-info">
+          <h3 class="info-heading">Other Ways to Reach Me</h3>
+          <div class="contact-methods">
+            <div class="method-item">
+              <div class="method-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="method-content">
+                <p class="method-label">Email</p>
+                <p class="method-value">team7@portfolio.com</p>
+              </div>
+            </div>
+
+            <div class="method-item">
+              <div class="method-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="method-content">
+                <p class="method-label">Phone</p>
+                <p class="method-value">+91 7777777777</p>
+              </div>
+            </div>
+
+            <div class="method-item">
+              <div class="method-icon">
+                <i class="fas fa-location-dot"></i>
+              </div>
+              <div class="method-content">
+                <p class="method-label">Location</p>
+                <p class="method-value">Tamilnadu, India</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+  </div>
+
+  <script src="script.js"></script>
+  <script src="contact.js"></script>
+</body>
+</html>
