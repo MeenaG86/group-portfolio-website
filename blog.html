@@ -1,250 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Blog</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="blog.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="blog.css">
 </head>
+
 <body>
 
-  <div class="page-wrapper">
+  <div class="page">
 
+    <!-- Sidebar -->
     <aside class="sidebar">
-      <div class="sidebar-inner">
-
-        <div class="sb-avatar-wrap">
-          <img
-            src="https://api.dicebear.com/7.x/adventurer/svg?seed=Richard&backgroundColor=b6e3f4"
-            alt="Richard Hanrick"
-            class="sb-avatar"/>
+      <div class="top">
+        <div class="avatar-box">
+          <img src="https://i.pravatar.cc/150?img=45" alt="avatar">
         </div>
 
-        <h2 class="sb-name">Richard Hanrick</h2>
-        <span class="sb-role">Web Developer</span>
+        <div class="top-text">
+          <h1 class="name">Meena Subash</h1>
+          <p class="role">Frontend developer</p>
+        </div>
 
-        <hr class="sb-divider" />
+        <button class="toggle-btn" id="toggleBtn">
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+      </div>
 
-        <!-- Contact Details -->
-        <ul class="sb-details">
-          <li class="sb-detail-item">
-            <span class="sb-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-            </span>
-            <div>
-              <p class="sb-label">EMAIL</p>
-              <p class="sb-value">richard@example.com</p>
-            </div>
-          </li>
-          <li class="sb-detail-item">
-            <span class="sb-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.07 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16l.92.92z"/></svg>
-            </span>
-            <div>
-              <p class="sb-label">PHONE</p>
-              <p class="sb-value">+1 (213) 352-2795</p>
-            </div>
-          </li>
-          <li class="sb-detail-item">
-            <span class="sb-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-            </span>
-            <div>
-              <p class="sb-label">BIRTHDAY</p>
-              <p class="sb-value">June 23, 1982</p>
-            </div>
-          </li>
-          <li class="sb-detail-item">
-            <span class="sb-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            </span>
-            <div>
-              <p class="sb-label">LOCATION</p>
-              <p class="sb-value">Sacramento,<br>California, USA</p>
-            </div>
-          </li>
-        </ul>
+      <div class="sidebar-content" id="toggleContent">
+        <div class="line"></div>
 
+        <div class="info-item">
+          <div class="icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <p class="label">EMAIL</p>
+            <p class="value" id="emailText">meeash2021@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="icon"><i class="fas fa-phone"></i></div>
+          <div>
+            <p class="label">PHONE</p>
+            <p class="value" id="phoneText">+91 9876543210</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="icon"><i class="fas fa-calendar"></i></div>
+          <div>
+            <p class="label">BIRTHDAY</p>
+            <p class="value">June 23, 1982</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="icon"><i class="fas fa-location-dot"></i></div>
+          <div>
+            <p class="label">LOCATION</p>
+            <p class="value" id="locationText">Tamilnadu, India</p>
+          </div>
+        </div>
+
+        <div id="mapContainer" style="display: none;">
+          <iframe src="https://www.google.com/maps?q=Tamil+Nadu,India&output=embed" width="100%" height="250"
+            style="border:0; border-radius:15px; margin-top:10px;">
+          </iframe>
+        </div>
+
+        <div class="socials">
+          <i class="fab fa-facebook-f" id="faceIcon"></i>
+          <i class="fab fa-twitter" id="twitterIcon"></i>
+          <i class="fab fa-instagram" id="instaIcon"></i>
+          <i class="fab fa-github" id="gitIcon"></i>
+          <i class="fab fa-linkedin" id="linkIcon"></i>
+
+
+        </div>
       </div>
     </aside>
 
-    <div class="main-column">
+    <!-- Main content -->
+    <main class="main-card">
+      <div class="tabs-wrapper">
+        <nav class="tabs">
+          <a href="index.html" class="active">About</a>
+          <a href="resume.html">Resume</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
 
-      <!-- Navigation -->
-      <header class="navbar">
-        <div class="nav-container">
-          <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-            <span></span><span></span><span></span>
-          </button>
-          <nav class="nav-menu">
-            <a href="index.html" class="nav-link">About</a>
-            <a href="resume.html" class="nav-link">Resume</a>
-            <a href="portfolio.html" class="nav-link">Portfolio</a>
-            <a href="blog.html" class="nav-link active">Blog</a>
-            <a href="contact.html" class="nav-link">Contact</a>
-          </nav>
-        </div>
-      </header>
+      <div class="main-column">
 
-      <!-- Main Content -->
-      <main class="main">
-        <div class="container">
+        <!-- Main Content -->
+        <main class="main">
+          <div class="container">
 
-          <!-- Page Header -->
-          <div class="page-header">
-            <h1 class="page-title">Blog</h1>
-            <span class="title-accent"></span>
+            <!-- Page Header -->
+            <div class="page-header">
+              <h1 class="page-title">Blog</h1>
+              <span class="title-accent"></span>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-bar" role="group" aria-label="Filter posts by category">
+              <button class="filter-btn active" data-filter="all">All</button>
+              <button class="filter-btn" data-filter="design">Design</button>
+              <button class="filter-btn" data-filter="ui">UI/UX</button>
+              <button class="filter-btn" data-filter="dev">Development</button>
+              <button class="filter-btn" data-filter="tips">Tips</button>
+            </div>
+
+            <!-- Blog Grid -->
+            <div class="blog-grid" id="blogGrid">
+
+              <!-- Card 1 -->
+              <section class="blog-card" data-category="design">
+                <div class="card-image-wrap">
+                  <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=600&q=80"
+                    alt="Design Principles" class="card-img" loading="lazy" />
+                </div>
+                <div class="card-body">
+                  <div class="card-meta">
+                    <span class="card-category">Design</span>
+                    <span class="card-dot">&bull;</span>
+                    <time class="card-date">Mar 20, 2026</time>
+                  </div>
+                  <h2 class="card-title">Fundamental Design Principles Every Designer Should Know</h2>
+                  <p class="card-excerpt">
+                    Good design is not just about making things look pretty &mdash; it is about solving problems
+                    elegantly.
+                    <span class="card-extra"> We dive deep into contrast, alignment, repetition, and proximity. Each
+                      principle builds on the other, creating a visual hierarchy that guides the reader's eye naturally
+                      through the content. Whether you are designing a poster, a website, or a mobile app, these
+                      fundamentals are your foundation. Mastering them takes time and practice, but the results are
+                      always worth the effort.</span>
+                  </p>
+                  <button class="read-more-btn" aria-expanded="false">Read More</button>
+                </div>
+              </section>
+
+              <!-- Card 2 -->
+              <section class="blog-card" data-category="ui">
+                <div class="card-image-wrap">
+                  <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&q=80" alt="UI Design"
+                    class="card-img" loading="lazy" />
+                </div>
+                <div class="card-body">
+                  <div class="card-meta">
+                    <span class="card-category">UI/UX</span>
+                    <span class="card-dot">&bull;</span>
+                    <time class="card-date">Feb 7, 2026</time>
+                  </div>
+                  <h2 class="card-title">Building Intuitive User Interfaces</h2>
+                  <p class="card-excerpt">
+                    User interfaces have evolved dramatically. What users expect today is vastly different from five
+                    years ago.
+                    <span class="card-extra"> Modern users demand seamless interactions. They want apps that anticipate
+                      their needs and reduce friction at every step. Micro-interactions, motion design, and
+                      accessibility are no longer optional extras &mdash; they are baseline expectations. This post
+                      walks through practical techniques you can apply immediately to make your interfaces feel
+                      polished.</span>
+                  </p>
+                  <button class="read-more-btn" aria-expanded="false">Read More</button>
+                </div>
+              </section>
+
+              <!-- Card 3 -->
+              <section class="blog-card" data-category="dev">
+                <div class="card-image-wrap">
+                  <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&q=80" alt="Development"
+                    class="card-img" loading="lazy" />
+                </div>
+                <div class="card-body">
+                  <div class="card-meta">
+                    <span class="card-category">Development</span>
+                    <span class="card-dot">&bull;</span>
+                    <time class="card-date">Jan 13, 2026</time>
+                  </div>
+                  <h2 class="card-title">Clean Code Habits That Will Save You Hours Every Week</h2>
+                  <p class="card-excerpt">
+                    Writing code that works is the minimum bar. Writing code others can read and maintain is the real
+                    skill.
+                    <span class="card-extra"> In this post we cover habits that professional developers use to keep
+                      codebases healthy: meaningful variable names, small focused functions, consistent formatting, and
+                      ruthless refactoring. We also discuss why comments should explain the "why" not the "what", and
+                      how automated linting tools can remove entire categories of debate from your team.</span>
+                  </p>
+                  <button class="read-more-btn" aria-expanded="false">Read More</button>
+                </div>
+              </section>
+
+              <!-- Card 4 -->
+              <section class="blog-card" data-category="tips">
+                <div class="card-image-wrap">
+                  <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&q=80"
+                    alt="Productivity Tips" class="card-img" loading="lazy" />
+                </div>
+                <div class="card-body">
+                  <div class="card-meta">
+                    <span class="card-category">Tips</span>
+                    <span class="card-dot">&bull;</span>
+                    <time class="card-date">Mar 6, 2026</time>
+                  </div>
+                  <h2 class="card-title">10 Productivity Tips for Creative Professionals</h2>
+                  <p class="card-excerpt">
+                    Creativity thrives within constraints, and productivity is the engine that turns ideas into finished
+                    work.
+                    <span class="card-extra"> This post shares ten battle-tested strategies that help designers and
+                      developers stay focused and ship work consistently. From time-blocking and the Pomodoro technique,
+                      to curating your work environment and building sustainable routines &mdash; each tip is practical
+                      and immediately actionable. Start with two or three that resonate most and build from
+                      there.</span>
+                  </p>
+                  <button class="read-more-btn" aria-expanded="false">Read More</button>
+                </div>
+              </section>
+
+              <!-- Card 5 -->
+              <section class="blog-card" data-category="design">
+                <div class="card-image-wrap">
+                  <img src="https://images.unsplash.com/photo-1609921212029-bb5a28e60960?w=600&q=80" alt="Color Theory"
+                    class="card-img" loading="lazy" />
+                </div>
+                <div class="card-body">
+                  <div class="card-meta">
+                    <span class="card-category">Design</span>
+                    <span class="card-dot">&bull;</span>
+                    <time class="card-date">Feb 11, 2026</time>
+                  </div>
+                  <h2 class="card-title">Color Theory for Digital Designers: A Practical Guide</h2>
+                  <p class="card-excerpt">
+                    Color is one of the most powerful tools in a designer's toolkit. Used well, it communicates mood
+                    without a single word.
+                    <span class="card-extra"> This guide breaks down the color wheel, complementary and analogous
+                      palettes, and how to choose colors that work together harmoniously. We also cover accessibility
+                      considerations &mdash; ensuring sufficient contrast for users with visual impairments &mdash; and
+                      how to use color consistently across a design system.</span>
+                  </p>
+                  <button class="read-more-btn" aria-expanded="false">Read More</button>
+                </div>
+              </section>
+
+              <!-- Card 6 -->
+              <section class="blog-card" data-category="ui">
+                <div class="card-image-wrap">
+                  <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=600&q=80" alt="Typography"
+                    class="card-img" loading="lazy" />
+                </div>
+                <div class="card-body">
+                  <div class="card-meta">
+                    <span class="card-category">UI/UX</span>
+                    <span class="card-dot">&bull;</span>
+                    <time class="card-date">Jan 10, 2026</time>
+                  </div>
+                  <h2 class="card-title">Typography That Works: Pairing Fonts Like a Pro</h2>
+                  <p class="card-excerpt">
+                    Typography is 95% of web design. Choosing the right typefaces can elevate an ordinary layout into
+                    something memorable.
+                    <span class="card-extra"> We explore the rules of font pairing: contrast vs harmony, serif vs
+                      sans-serif combinations, and how to establish a clear typographic scale. Real-world examples
+                      illustrate each concept so you can see immediately how the theory applies to actual projects. Good
+                      typography is invisible &mdash; readers simply feel that the content is easy to read.</span>
+                  </p>
+                  <button class="read-more-btn" aria-expanded="false">Read More</button>
+                </div>
+              </section>
+
+            </div>
+
+            <p class="empty-state" id="emptyState" hidden>No posts found in this category.</p>
+
           </div>
+        </main>
 
-          <!-- Filter Buttons -->
-          <div class="filter-bar" role="group" aria-label="Filter posts by category">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="design">Design</button>
-            <button class="filter-btn" data-filter="ui">UI/UX</button>
-            <button class="filter-btn" data-filter="dev">Development</button>
-            <button class="filter-btn" data-filter="tips">Tips</button>
-          </div>
+      </div>
+    </main>
 
-          <!-- Blog Grid -->
-          <div class="blog-grid" id="blogGrid">
-
-            <!-- Card 1 -->
-            <section class="blog-card" data-category="design">
-              <div class="card-image-wrap">
-                <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=600&q=80" alt="Design Principles" class="card-img" loading="lazy" />
-              </div>
-              <div class="card-body">
-                <div class="card-meta">
-                  <span class="card-category">Design</span>
-                  <span class="card-dot">&bull;</span>
-                  <time class="card-date">Mar 20, 2026</time>
-                </div>
-                <h2 class="card-title">Fundamental Design Principles Every Designer Should Know</h2>
-                <p class="card-excerpt">
-                  Good design is not just about making things look pretty &mdash; it is about solving problems elegantly.
-                  <span class="card-extra"> We dive deep into contrast, alignment, repetition, and proximity. Each principle builds on the other, creating a visual hierarchy that guides the reader's eye naturally through the content. Whether you are designing a poster, a website, or a mobile app, these fundamentals are your foundation. Mastering them takes time and practice, but the results are always worth the effort.</span>
-                </p>
-                <button class="read-more-btn" aria-expanded="false">Read More</button>
-              </div>
-            </section>
-
-            <!-- Card 2 -->
-            <section class="blog-card" data-category="ui">
-              <div class="card-image-wrap">
-                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&q=80" alt="UI Design" class="card-img" loading="lazy" />
-              </div>
-              <div class="card-body">
-                <div class="card-meta">
-                  <span class="card-category">UI/UX</span>
-                  <span class="card-dot">&bull;</span>
-                  <time class="card-date">Feb 7, 2026</time>
-                </div>
-                <h2 class="card-title">Building Intuitive User Interfaces</h2>
-                <p class="card-excerpt">
-                  User interfaces have evolved dramatically. What users expect today is vastly different from five years ago.
-                  <span class="card-extra"> Modern users demand seamless interactions. They want apps that anticipate their needs and reduce friction at every step. Micro-interactions, motion design, and accessibility are no longer optional extras &mdash; they are baseline expectations. This post walks through practical techniques you can apply immediately to make your interfaces feel polished.</span>
-                </p>
-                <button class="read-more-btn" aria-expanded="false">Read More</button>
-              </div>
-            </section>
-
-            <!-- Card 3 -->
-            <section class="blog-card" data-category="dev">
-              <div class="card-image-wrap">
-                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&q=80" alt="Development" class="card-img" loading="lazy" />
-              </div>
-              <div class="card-body">
-                <div class="card-meta">
-                  <span class="card-category">Development</span>
-                  <span class="card-dot">&bull;</span>
-                  <time class="card-date">Jan 13, 2026</time>
-                </div>
-                <h2 class="card-title">Clean Code Habits That Will Save You Hours Every Week</h2>
-                <p class="card-excerpt">
-                  Writing code that works is the minimum bar. Writing code others can read and maintain is the real skill.
-                  <span class="card-extra"> In this post we cover habits that professional developers use to keep codebases healthy: meaningful variable names, small focused functions, consistent formatting, and ruthless refactoring. We also discuss why comments should explain the "why" not the "what", and how automated linting tools can remove entire categories of debate from your team.</span>
-                </p>
-                <button class="read-more-btn" aria-expanded="false">Read More</button>
-              </div>
-            </section>
-
-            <!-- Card 4 -->
-            <section class="blog-card" data-category="tips">
-              <div class="card-image-wrap">
-                <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&q=80" alt="Productivity Tips" class="card-img" loading="lazy" />
-              </div>
-              <div class="card-body">
-                <div class="card-meta">
-                  <span class="card-category">Tips</span>
-                  <span class="card-dot">&bull;</span>
-                  <time class="card-date">Mar 6, 2026</time>
-                </div>
-                <h2 class="card-title">10 Productivity Tips for Creative Professionals</h2>
-                <p class="card-excerpt">
-                  Creativity thrives within constraints, and productivity is the engine that turns ideas into finished work.
-                  <span class="card-extra"> This post shares ten battle-tested strategies that help designers and developers stay focused and ship work consistently. From time-blocking and the Pomodoro technique, to curating your work environment and building sustainable routines &mdash; each tip is practical and immediately actionable. Start with two or three that resonate most and build from there.</span>
-                </p>
-                <button class="read-more-btn" aria-expanded="false">Read More</button>
-              </div>
-            </section>
-
-            <!-- Card 5 -->
-            <section class="blog-card" data-category="design">
-              <div class="card-image-wrap">
-                <img src="https://images.unsplash.com/photo-1609921212029-bb5a28e60960?w=600&q=80" alt="Color Theory" class="card-img" loading="lazy" />
-              </div>
-              <div class="card-body">
-                <div class="card-meta">
-                  <span class="card-category">Design</span>
-                  <span class="card-dot">&bull;</span>
-                  <time class="card-date">Feb 11, 2026</time>
-                </div>
-                <h2 class="card-title">Color Theory for Digital Designers: A Practical Guide</h2>
-                <p class="card-excerpt">
-                  Color is one of the most powerful tools in a designer's toolkit. Used well, it communicates mood without a single word.
-                  <span class="card-extra"> This guide breaks down the color wheel, complementary and analogous palettes, and how to choose colors that work together harmoniously. We also cover accessibility considerations &mdash; ensuring sufficient contrast for users with visual impairments &mdash; and how to use color consistently across a design system.</span>
-                </p>
-                <button class="read-more-btn" aria-expanded="false">Read More</button>
-              </div>
-            </section>
-
-            <!-- Card 6 -->
-            <section class="blog-card" data-category="ui">
-              <div class="card-image-wrap">
-                <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=600&q=80" alt="Typography" class="card-img" loading="lazy" />
-              </div>
-              <div class="card-body">
-                <div class="card-meta">
-                  <span class="card-category">UI/UX</span>
-                  <span class="card-dot">&bull;</span>
-                  <time class="card-date">Jan 10, 2026</time>
-                </div>
-                <h2 class="card-title">Typography That Works: Pairing Fonts Like a Pro</h2>
-                <p class="card-excerpt">
-                  Typography is 95% of web design. Choosing the right typefaces can elevate an ordinary layout into something memorable.
-                  <span class="card-extra"> We explore the rules of font pairing: contrast vs harmony, serif vs sans-serif combinations, and how to establish a clear typographic scale. Real-world examples illustrate each concept so you can see immediately how the theory applies to actual projects. Good typography is invisible &mdash; readers simply feel that the content is easy to read.</span>
-                </p>
-                <button class="read-more-btn" aria-expanded="false">Read More</button>
-              </div>
-            </section>
-
-          </div>
-
-          <p class="empty-state" id="emptyState" hidden>No posts found in this category.</p>
-
-        </div>
-      </main>
-
-      <footer class="footer">
-        <p>&copy; 2026 Richard Hanrick. All rights reserved.</p>
-      </footer>
-
-    </div>
   </div>
 
   <script src="blog.js"></script>
 </body>
+
 </html>
