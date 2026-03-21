@@ -20,10 +20,15 @@ Project showcase section
 
 Team Members
 👤 Muniammal – index page(sidebar,navbar,about,what I'm doing)
+
 👤 Ruqayya – index page(testimonials,clients)
+
 👤 Arjun – resume
+
 👤 Rohith – portfolio
+
 👤 Harshini – blog
+
 👤 Vignesh – contact
 
 🛠️ Technologies Used
