@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio UI</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="portfolio.css">
+
+</head>
+
+<body class="portfolio-page">
+
+    <div class="page">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="top">
+                <div class="avatar-box">
+                    <img src="https://i.pravatar.cc/150?img=45" alt="avatar">
+                </div>
+
+                <div class="top-text">
+                    <h1 class="name">Meena Subash</h1>
+                    <p class="role">Frontend developer</p>
+                </div>
+
+                <button class="toggle-btn" id="toggleBtn">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+            </div>
+
+            <div class="sidebar-content" id="toggleContent">
+                <div class="line"></div>
+
+                <div class="info-item">
+                    <div class="icon"><i class="fas fa-envelope"></i></div>
+                    <div>
+                        <p class="label">EMAIL</p>
+                        <p class="value">meeash2021@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="icon"><i class="fas fa-phone"></i></div>
+                    <div>
+                        <p class="label">PHONE</p>
+                        <p class="value">+91 9012345678</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="icon"><i class="fas fa-calendar"></i></div>
+                    <div>
+                        <p class="label">BIRTHDAY</p>
+                        <p class="value">June 23, 1982</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="icon"><i class="fas fa-location-dot"></i></div>
+                    <div>
+                        <p class="label">LOCATION</p>
+                        <p class="value">Tamilnadu, India</p>
+                    </div>
+                </div>
+
+                <div class="socials">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main content -->
+        <main class="main-card">
+            <nav class="tabs">
+                <a href="index.html">About</a>
+                <a href="resume.html">Resume</a>
+                <a href="portfolio.html" class="active">Portfolio</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <!-- ===== PORTFOLIO SECTION START ===== -->
+            <section class="portfolio">
+                <h2>Portfolio</h2>
+                <div class="underline"></div>
+                <nav>
+                    <label class="button">
+                        <span class="btn-text">All</span>
+                        <span class="arrow">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                    </label>
+
+                    <ul class="filter">
+                        <li class="filter-list active " data-filter="all">All</li>
+                        <li class="filter-list" data-filter="web design">Web Design</li>
+                        <li class="filter-list" data-filter="application">Application</li>
+                        <li class="filter-list" data-filter="web development">Web Development</li>
+                    </ul>
+                </nav>
+                <ul class="projects">
+                    <li class="project-item" data-category="web development">
+
+                        <a href="#">
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    👁
+                                </div>
+                                <img src="./images/project-1.jpg" alt="project-1">
+                            </figure>
+                            <div class="project-desc">
+                                <h3 class="project-title">Finance</h3>
+                                <p class="project-category">Web devolopment</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="project-item" data-category="web development">
+
+                        <a href="#">
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    👁
+                                </div>
+                                <img src="./images/project-2.png" alt="project-2">
+                            </figure>
+                            <div class="project-desc">
+                                <h3 class="project-title">Orizon</h3>
+                                <p class="project-category">Web development</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="project-item" data-category="web design">
+
+                        <a href="#">
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    👁
+                                </div>
+                                <img src="./images/project-3.jpg" alt="project-3">
+                            </figure>
+                            <div class="project-desc">
+                                <h3 class="project-title">Fundi</h3>
+                                <p class="project-category">Web design</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="project-item" data-category="application">
+
+                        <a href="#">
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    👁
+                                </div>
+                                <img src="./images/project-4.png" alt="project-4">
+                            </figure>
+                            <div class="project-desc">
+                                <h3 class="project-title">Finance</h3>
+                                <p class="project-category">Webdevolpment</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="project-item" data-category="web design">
+
+                        <a href="#">
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    👁
+                                </div>
+                                <img src="./images/project-5.png" alt="project-5">
+                            </figure>
+                            <div class="project-desc">
+                                <h3 class="project-title">Brawlhalla</h3>
+                                <p class="project-category">Application</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="project-item" data-category="web design">
+
+                        <a href="#">
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    👁
+                                </div>
+                                <img src="./images/project-6.png" alt="project-6">
+                            </figure>
+                            <div class="project-desc">
+                                <h3 class="project-title">DSM</h3>
+                                <p class="project-category">Webdesign</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="project-item" data-category="application">
+
+                        <a href="#">
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    👁
+                                </div>
+                                <img src="./images/project-7.png" alt="project-7">
+                            </figure>
+                            <div class="project-desc">
+                                <h3 class="project-title">EMC</h3>
+                                <p class="project-category">Application</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="project-item" data-category="web development">
+
+                        <a href="#">
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    👁
+                                </div>
+                                <img src="./images/project-8.jpg" alt="project-7">
+                            </figure>
+                            <div class="project-desc">
+                                <h3 class="project-title">Task manager</h3>
+                                <p class="project-category">Application</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="project-item" data-category="web development">
+
+                        <a href="#">
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    👁
+                                </div>
+                                <img src="./images/project-9.png" alt="project-7">
+                            </figure>
+                            <div class="project-desc">
+                                <h3 class="project-title">Arrival</h3>
+                                <p class="project-category">Web devolopment</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+
+            </section>
+            <!-- ===== PORTFOLIO SECTION END ===== -->
+
+        </main>
+
+
+        </main>
+
+    </div>
+    <script src="Portfolio.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
