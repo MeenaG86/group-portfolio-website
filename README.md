@@ -1,9 +1,9 @@
 Group Portfolio Website
 
 A modern and interactive Group Portfolio Website built using HTML, CSS, and JavaScript. This project showcases team members, their skills, projects, and contact details with a clean and responsive UI.
-Live Demo
 
-🔗 https://github.com/MeenaG86/group-portfolio-website
+Live Demo
+🔗 https://meenag86.github.io/group-portfolio-website/
  )
 
 📌 Project Overview
@@ -17,6 +17,7 @@ Interactive UI with JavaScript
 Smooth navigation and modern layout
 Team member profiles with social links
 Project showcase section
+
 Team Members
 👤 Muniammal – index page(sidebar,navbar,about,what I'm doing)
 👤 Ruqayya – index page(testimonials,clients)
@@ -24,10 +25,12 @@ Team Members
 👤 Rohith – portfolio
 👤 Harshini – blog
 👤 Vignesh – contact
+
 🛠️ Technologies Used
 HTML5
 CSS3
 JavaScript
+
 📂 Folder Structure
 group-portfolio/
 │── index.html
@@ -60,15 +63,15 @@ This website is optimized for:
 📱 Mobile Devices
 📟 Tablets
 💻 Desktop Screens
+
 🎯 Learning Outcomes
 Team collaboration in web development
 Real-world project structure
 DOM manipulation using JavaScript
 Responsive design using CSS
-⭐ Acknowledgement
 
+⭐ Acknowledgement
 Thanks to all team members for their contribution and teamwork in building this project successfully 💪✨
 
 📄 License
-
 This project is for educational purposes only.
