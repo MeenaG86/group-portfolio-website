@@ -15,6 +15,13 @@ body {
   padding: 24px;
   align-items: flex-start;
 }
+.tabs-wrapper {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 100;
+}
 
 /* SIDEBAR */
 .sidebar {
@@ -126,9 +133,8 @@ body {
 }
 
 .tabs {
-  position: absolute;
+  position: sticky;
   top: 0;
-  right: 0;
   background: #202023;
   border-bottom-left-radius: 24px;
   border-top-right-radius: 28px;
@@ -144,7 +150,6 @@ body {
   text-decoration: none;
   color: #ccc;
   transition: 0.3s;
-
 }
 
 /* underline */
@@ -487,14 +492,22 @@ nav label {
     padding: 14px 14px 90px;
   }
 
-  .sidebar,
+  
   .main-card {
     width: 100%;
+    z-index: 1;
+    box-sizing: border-box;
   }
 
   .sidebar {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
     padding: 18px 18px 16px;
     border-radius: 24px;
+    position:  relative !important;
+    top:unset;
   }
 
   .top {
@@ -564,6 +577,12 @@ nav label {
     border-radius: 18px 18px 0 0;
     backdrop-filter: blur(10px);
     z-index: 999;
+    margin: 0;
+  }
+
+  .tabs-wrapper {
+    position: static;
+    display: block;
   }
 
   .tabs a {
@@ -672,4 +691,3 @@ nav.active .filter {
   }
 }
  /* Portfolio - Mediaquery Ends */
-

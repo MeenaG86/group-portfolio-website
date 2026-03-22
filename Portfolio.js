@@ -6,6 +6,39 @@ toggleBtn.addEventListener("click", function () {
   toggleBtn.classList.toggle("active");
 });
 
+//social icons
+//facebook
+const facebook = document.getElementById("faceIcon");
+
+facebook.addEventListener("click", function () {
+  window.open("https://www.facebook.com/", "_blank");
+});
+//twitter
+const twitter = document.getElementById("twitterIcon");
+
+twitter.addEventListener("click", function () {
+  window.open("https://www.twitter.com/", "_blank");
+});
+//instagram
+const insta = document.getElementById("instaIcon");
+
+insta.addEventListener("click", function () {
+  window.open("https://www.instagram.com/", "_blank");
+});
+
+//github
+const github=document.getElementById("gitIcon");
+github.addEventListener("click",function(){
+  window.open("https://www.github.com/MeenaG86", "_blank");
+});
+
+//linkedin
+
+const linkedin=document.getElementById("linkIcon");
+linkedin.addEventListener("click",function(){
+  window.open("https://www.linkedin.com/in/meena-subash-55a151222/", "_blank");
+});
+
 
 document.addEventListener("DOMContentLoaded", () => {
 
