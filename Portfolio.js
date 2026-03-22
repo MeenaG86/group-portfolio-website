@@ -6,6 +6,33 @@ toggleBtn.addEventListener("click", function () {
   toggleBtn.classList.toggle("active");
 });
 
+//email
+const emailText = document.getElementById("emailText");
+
+emailText.addEventListener("click", function () {
+  window.location.href = "mailto:meeash2021@gmail.com";
+});
+
+//phone
+const phoneText = document.getElementById("phoneText");
+
+phoneText.addEventListener("click", function () {
+  window.location.href = "tel:+919876543210";
+});
+
+//location
+const locationText = document.getElementById("locationText");
+const mapContainer = document.getElementById("mapContainer");
+
+locationText.addEventListener("click", function () {
+  if (mapContainer.style.display === "none") {
+    mapContainer.style.display = "block";
+  } else {
+    mapContainer.style.display = "none";
+  }
+});
+
+
 //social icons
 //facebook
 const facebook = document.getElementById("faceIcon");
